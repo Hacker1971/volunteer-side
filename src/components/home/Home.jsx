@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     if (count) {
-      fetch(`http://localhost:5000/services/${searchData}`)
+      fetch(`https://volunteer-server-ivory.vercel.app/services${searchData}`)
         .then((res) => res.json())
         .then((data) => setCount(data));
     }
